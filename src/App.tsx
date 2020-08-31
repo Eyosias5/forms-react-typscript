@@ -3,13 +3,16 @@ import "./App.css";
 import { GlobalStyle, theme } from "./Theme/globalStyles";
 import { ThemeProvider } from "styled-components";
 import EnquiryForm from "./Pages/EnquiryForm";
+import { EnquiryProvider } from "./context/EnquiryContext";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <EnquiryForm />
-    </ThemeProvider>
+    <EnquiryProvider>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <EnquiryForm />
+      </ThemeProvider>
+    </EnquiryProvider>
   );
 }
 

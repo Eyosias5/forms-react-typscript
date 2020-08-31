@@ -1,15 +1,18 @@
 import React from "react";
-import styled from "styled-components";
-
-export const Hello = styled.div`
-  background: ${({ theme }) => theme.primary_1};
-`;
+import { Container, Overlay } from "./styles";
+import EnquiryCard from "../components/StepCard/EnquiryCard";
+import { SideNote } from "../components/SideNote";
+import EnquiryStep2 from "../components/Forms/Enquiry/Step2";
 
 const EnquiryForm = () => {
   return (
-    <Hello>
-      <h1>Hi</h1>
-    </Hello>
+    <Container>
+      <Overlay />
+      <EnquiryCard>
+        <SideNote step={2} />
+        <EnquiryStep2 />
+      </EnquiryCard>
+    </Container>
   );
 };
 

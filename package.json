@@ -13,7 +13,9 @@
     "@types/styled-components": "^5.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-hook-form": "^6.4.1",
     "react-scripts": "3.4.2",
+    "react-textarea-autosize": "^8.2.0",
     "typescript": "~3.7.2"
   },
   "scripts": {
